@@ -58,18 +58,18 @@ function App() {
         <div>
           <label for="name">Name</label>
           <input
-            type="text"
+            type="text"            
+            onChange={handleFormUpdate}
             name="name"
-            onClick={handleFormUpdate}
             value={formState.name}
           ></input>
         </div>
         <div>
           <label>Gender</label>
           <select
-            value={formState.gender}
             onChange={handleFormUpdate}
             name="gender"
+            value={formState.gender}
           >
             <option value="male">Male</option>
             <option value="female">Female</option>
@@ -78,10 +78,10 @@ function App() {
         <div>
           <label>Marital Status</label>
           <input
-            checked={formState.maritalStatus}
             onChange={handleFormUpdate}
             name="maritalStatus"
             type="checkbox"
+            checked={formState.maritalStatus}
           ></input>
         </div>
         <div>
